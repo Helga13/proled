@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .a, .c {
+        fill: none;
+      }
+
+      .b {
+        clip-path: url(#a);
+      }
+
+      .c {
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .d {
+        clip-path: url(#b);
+      }
+    </style>
+    <clipPath id="a">
+      <ellipse class="a" cx="50.25" cy="80.76" rx="16.16" ry="4.69"/>
+    </clipPath>
+    <clipPath id="b">
+      <path class="a" d="M-10-7V112H109V-7H-10ZM75.73,34.05L50.5,79.31,25.27,34.05c-0.87-1.74-1.35-5.19-1.35-8.11A26.59,26.59,0,0,1,77.09,26C77.09,28.94,76.6,32.31,75.73,34.05Z"/>
+    </clipPath>
+  </defs>
+  <title>advantage</title>
+  <g>
+    <g class="b">
+      <g>
+        <line class="c" x1="3.7" y1="61.46" x2="96.8" y2="100.06"/>
+        <line class="c" x1="96.89" y1="61.69" x2="3.61" y2="99.83"/>
+      </g>
+    </g>
+    <g class="d">
+      <g>
+        <ellipse class="c" cx="50.25" cy="82.83" rx="43.02" ry="14.45"/>
+        <ellipse class="c" cx="50.25" cy="82.07" rx="29.9" ry="8.68"/>
+      </g>
+    </g>
+    <path class="c" d="M75,27.08A24.49,24.49,0,0,0,26,27a19.76,19.76,0,0,0,1.25,7.47L50.5,76.17,73.74,34.48A19.36,19.36,0,0,0,75,27.08Z"/>
+    <circle class="c" cx="50.5" cy="25.66" r="12.36"/>
+  </g>
+</svg>
