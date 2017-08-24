@@ -15,5 +15,7 @@ $(document).ready(function () {
     variableWidth: true
   });
   
+  $("#index_phone").mask("+375 (99) 999 99 99");
+  
   
 })

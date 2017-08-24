@@ -10,17 +10,127 @@
   At the bottom of this section, we provide information about the spritesheet itself
   $spritesheet: width height image $spritesheet-sprites
   */
+$address-name: 'address'
+$address-x: 2587px
+$address-y: 563px
+$address-offset-x: -2587px
+$address-offset-y: -563px
+$address-width: 11px
+$address-height: 14px
+$address-total-width: 8000px
+$address-total-height: 659px
+$address-image: 'sprite.png'
+$address: 2587px 563px -2587px -563px 11px 14px 8000px 659px 'sprite.png' 'address'
+$city-name: 'city'
+$city-x: 2598px
+$city-y: 563px
+$city-offset-x: -2598px
+$city-offset-y: -563px
+$city-width: 14px
+$city-height: 10px
+$city-total-width: 8000px
+$city-total-height: 659px
+$city-image: 'sprite.png'
+$city: 2598px 563px -2598px -563px 14px 10px 8000px 659px 'sprite.png' 'city'
+$icon_address-name: 'icon_address'
+$icon_address-x: 63px
+$icon_address-y: 596px
+$icon_address-offset-x: -63px
+$icon_address-offset-y: -596px
+$icon_address-width: 15px
+$icon_address-height: 22px
+$icon_address-total-width: 8000px
+$icon_address-total-height: 659px
+$icon_address-image: 'sprite.png'
+$icon_address: 63px 596px -63px -596px 15px 22px 8000px 659px 'sprite.png' 'icon_address'
+$icon_mail-name: 'icon_mail'
+$icon_mail-x: 2522px
+$icon_mail-y: 563px
+$icon_mail-offset-x: -2522px
+$icon_mail-offset-y: -563px
+$icon_mail-width: 22px
+$icon_mail-height: 17px
+$icon_mail-total-width: 8000px
+$icon_mail-total-height: 659px
+$icon_mail-image: 'sprite.png'
+$icon_mail: 2522px 563px -2522px -563px 22px 17px 8000px 659px 'sprite.png' 'icon_mail'
 $icon_phone-name: 'icon_phone'
 $icon_phone-x: 0px
-$icon_phone-y: 585px
+$icon_phone-y: 596px
 $icon_phone-offset-x: 0px
-$icon_phone-offset-y: -585px
+$icon_phone-offset-y: -596px
 $icon_phone-width: 63px
 $icon_phone-height: 63px
 $icon_phone-total-width: 8000px
-$icon_phone-total-height: 648px
+$icon_phone-total-height: 659px
 $icon_phone-image: 'sprite.png'
-$icon_phone: 0px 585px 0px -585px 63px 63px 8000px 648px 'sprite.png' 'icon_phone'
+$icon_phone: 0px 596px 0px -596px 63px 63px 8000px 659px 'sprite.png' 'icon_phone'
+$icon_skype-name: 'icon_skype'
+$icon_skype-x: 2544px
+$icon_skype-y: 563px
+$icon_skype-offset-x: -2544px
+$icon_skype-offset-y: -563px
+$icon_skype-width: 15px
+$icon_skype-height: 16px
+$icon_skype-total-width: 8000px
+$icon_skype-total-height: 659px
+$icon_skype-image: 'sprite.png'
+$icon_skype: 2544px 563px -2544px -563px 15px 16px 8000px 659px 'sprite.png' 'icon_skype'
+$icon_velcom-name: 'icon_velcom'
+$icon_velcom-x: 2500px
+$icon_velcom-y: 563px
+$icon_velcom-offset-x: -2500px
+$icon_velcom-offset-y: -563px
+$icon_velcom-width: 22px
+$icon_velcom-height: 22px
+$icon_velcom-total-width: 8000px
+$icon_velcom-total-height: 659px
+$icon_velcom-image: 'sprite.png'
+$icon_velcom: 2500px 563px -2500px -563px 22px 22px 8000px 659px 'sprite.png' 'icon_velcom'
+$mail-name: 'mail'
+$mail-x: 2612px
+$mail-y: 563px
+$mail-offset-x: -2612px
+$mail-offset-y: -563px
+$mail-width: 12px
+$mail-height: 10px
+$mail-total-width: 8000px
+$mail-total-height: 659px
+$mail-image: 'sprite.png'
+$mail: 2612px 563px -2612px -563px 12px 10px 8000px 659px 'sprite.png' 'mail'
+$mts-name: 'mts'
+$mts-x: 2559px
+$mts-y: 563px
+$mts-offset-x: -2559px
+$mts-offset-y: -563px
+$mts-width: 14px
+$mts-height: 14px
+$mts-total-width: 8000px
+$mts-total-height: 659px
+$mts-image: 'sprite.png'
+$mts: 2559px 563px -2559px -563px 14px 14px 8000px 659px 'sprite.png' 'mts'
+$skype-name: 'skype'
+$skype-x: 2624px
+$skype-y: 563px
+$skype-offset-x: -2624px
+$skype-offset-y: -563px
+$skype-width: 10px
+$skype-height: 10px
+$skype-total-width: 8000px
+$skype-total-height: 659px
+$skype-image: 'sprite.png'
+$skype: 2624px 563px -2624px -563px 10px 10px 8000px 659px 'sprite.png' 'skype'
+$velcom-name: 'velcom'
+$velcom-x: 2573px
+$velcom-y: 563px
+$velcom-offset-x: -2573px
+$velcom-offset-y: -563px
+$velcom-width: 14px
+$velcom-height: 14px
+$velcom-total-width: 8000px
+$velcom-total-height: 659px
+$velcom-image: 'sprite.png'
+$velcom: 2573px 563px -2573px -563px 14px 14px 8000px 659px 'sprite.png' 'velcom'
 $wave-01-name: 'wave-01'
 $wave-01-x: 0px
 $wave-01-y: 0px
@@ -29,36 +139,47 @@ $wave-01-offset-y: 0px
 $wave-01-width: 8000px
 $wave-01-height: 563px
 $wave-01-total-width: 8000px
-$wave-01-total-height: 648px
+$wave-01-total-height: 659px
 $wave-01-image: 'sprite.png'
-$wave-01: 0px 0px 0px 0px 8000px 563px 8000px 648px 'sprite.png' 'wave-01'
+$wave-01: 0px 0px 0px 0px 8000px 563px 8000px 659px 'sprite.png' 'wave-01'
+$wave-02-name: 'wave-02'
+$wave-02-x: 0px
+$wave-02-y: 563px
+$wave-02-offset-x: 0px
+$wave-02-offset-y: -563px
+$wave-02-width: 1920px
+$wave-02-height: 33px
+$wave-02-total-width: 8000px
+$wave-02-total-height: 659px
+$wave-02-image: 'sprite.png'
+$wave-02: 0px 563px 0px -563px 1920px 33px 8000px 659px 'sprite.png' 'wave-02'
 $wave_lamp-d-name: 'wave_lamp-d'
-$wave_lamp-d-x: 0px
+$wave_lamp-d-x: 2210px
 $wave_lamp-d-y: 563px
-$wave_lamp-d-offset-x: 0px
+$wave_lamp-d-offset-x: -2210px
 $wave_lamp-d-offset-y: -563px
 $wave_lamp-d-width: 290px
 $wave_lamp-d-height: 22px
 $wave_lamp-d-total-width: 8000px
-$wave_lamp-d-total-height: 648px
+$wave_lamp-d-total-height: 659px
 $wave_lamp-d-image: 'sprite.png'
-$wave_lamp-d: 0px 563px 0px -563px 290px 22px 8000px 648px 'sprite.png' 'wave_lamp-d'
+$wave_lamp-d: 2210px 563px -2210px -563px 290px 22px 8000px 659px 'sprite.png' 'wave_lamp-d'
 $wave_lamp-name: 'wave_lamp'
-$wave_lamp-x: 290px
+$wave_lamp-x: 1920px
 $wave_lamp-y: 563px
-$wave_lamp-offset-x: -290px
+$wave_lamp-offset-x: -1920px
 $wave_lamp-offset-y: -563px
 $wave_lamp-width: 290px
 $wave_lamp-height: 22px
 $wave_lamp-total-width: 8000px
-$wave_lamp-total-height: 648px
+$wave_lamp-total-height: 659px
 $wave_lamp-image: 'sprite.png'
-$wave_lamp: 290px 563px -290px -563px 290px 22px 8000px 648px 'sprite.png' 'wave_lamp'
+$wave_lamp: 1920px 563px -1920px -563px 290px 22px 8000px 659px 'sprite.png' 'wave_lamp'
 $spritesheet-width: 8000px
-$spritesheet-height: 648px
+$spritesheet-height: 659px
 $spritesheet-image: 'sprite.png'
-$spritesheet-sprites: $icon_phone $wave-01 $wave_lamp-d $wave_lamp
-$spritesheet: 8000px 648px 'sprite.png' $spritesheet-sprites
+$spritesheet-sprites: $address $city $icon_address $icon_mail $icon_phone $icon_skype $icon_velcom $mail $mts $skype $velcom $wave-01 $wave-02 $wave_lamp-d $wave_lamp
+$spritesheet: 8000px 659px 'sprite.png' $spritesheet-sprites
 
 /*
   The provided mixins are intended to be used with the array-like variables
