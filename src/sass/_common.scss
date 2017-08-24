@@ -727,12 +727,16 @@ header{
     position: relative;
     .wave{
       bottom: -1px;
+			height: 22px;
       img{
         position: relative;
+				position: absolute;
+        bottom: 0;
       }
       .dark{
-        position: absolute;
-        bottom: 6px;
+				position: relative;
+//        position: absolute;
+//        bottom: 6px;
       }
     }
     img{
@@ -917,6 +921,7 @@ header{
     line-height: 26px;
     font-family: 'rubikMedium', $font-stack-helvetica;
     margin: 40px 0 32px 0;
+		color: #222;
   }
   p{
     margin: 24px 0;
