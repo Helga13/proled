@@ -437,6 +437,8 @@ header{
       left: 0;
       background-image: linear-gradient( rgb(252,191,0) 0%, rgb(246,139,31) 100%);
       z-index: -1;
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 30px;
       transition: transform .3s ease-in-out;
     }
     &:hover,
@@ -502,6 +504,7 @@ header{
       display: inline-block;
       width: 100%;
       line-height: 49px;
+      position: relative;
     }
     &:hover,
     &:active,
@@ -545,6 +548,48 @@ header{
           }
         }
       }
+    }
+  }
+  &.power{
+    text-align: left;
+    padding-top: 0;
+    .hover_tooltip{
+      position: absolute;
+      top: 61px;
+      width: auto;
+      left: 0;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.025em;
+      text-align: left;
+      border: 1px solid rgb(204, 204, 204);
+      border-radius: 10px;
+      box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+      white-space: nowrap;
+      padding: 15px 18px;
+      opacity: 0;
+      visibility: hidden;
+      color: #333;
+      transition: opacity .3s ease-in-out;
+      &:before,
+      &:after{
+        content: '';
+        position: absolute;
+        top: -8px;
+        left: 28px;
+        border-bottom: 8px solid rgb(204, 204, 204);
+        border-right: 8px solid transparent;
+        border-left: 8px solid transparent;
+        border-top: 0;
+      }
+      &:after{
+        border-bottom: 8px solid #fff;
+        top: -7px;
+      }
+    }
+    a:hover .hover_tooltip{
+      opacity: 1;
+      visibility: visible;
     }
   }
 }
@@ -1293,7 +1338,7 @@ header{
 
 .features_block{
   font-size: 0;
-  margin: 50px -20px;
+  margin: 10px -20px 50px;
   .item{
     display: inline-block;
     width: 50%;
@@ -1331,4 +1376,194 @@ header{
       }
     }
   }
+}
+
+/* zoom on product page */
+
+.zoomContainer{
+  z-index: 2;
+}
+
+#gal1{
+  float: left;
+  width: 82px;
+  margin-right: 30px;
+  a{
+    display: inline-block;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 6px;
+    &.active{
+      border-color: #7e7e7e;
+    }
+  }
+}
+
+.product_card{
+  font-size: 0;
+  .img_block{
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    padding-right: 20px;
+    & > #img_01,
+    .zoomContainer{
+      width: calc(100% - 112px)!important;
+    }
+  }
+  .main_descr{
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    padding-left: 20px;
+    .text{
+      
+    }
+  }
+  
+}
+
+/* custom tumbler */
+
+.tumbler{
+  position: relative;
+  padding-bottom: 10px;
+  .checkbox {
+    vertical-align: top;
+    margin: 0 3px 0 0;
+    width: 17px;
+    height: 17px;
+  }
+  .checkbox + label{
+    cursor: pointer;
+    color: #333;
+    font-size: 16px;
+    line-height: 50px;
+    font-family: 'rubikRegular', $font-stack-helvetica;
+    display: inline-block;
+    letter-spacing: 0.025em;
+  }
+  .checkbox:not(checked) {
+    position: absolute;
+    opacity: 0;
+  }
+  .checkbox:not(checked) + label {
+    position: relative; /* будем позиционировать псевдочекбокс относительно label */
+    padding: 0 0 0 120px; /* оставляем слева от label место под псевдочекбокс */
+  }
+  /* Оформление первой части чекбокса в выключенном состоянии (фон). */
+  .checkbox:not(checked) + label:before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    left: 0;
+    top: 0;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 25px;
+    box-shadow: inset 0px 3px 1px 0px rgba(10, 1, 56, 0.3);
+  }
+  .checkbox:not(checked) + label:after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 51px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: url('../img/icons/icon_warm.png') center no-repeat, linear-gradient( 0deg, rgb(246,139,31) 0%, rgb(252,191,0) 100%);
+    background-size: 25px, 100%;
+    transition: all .2s;
+  }
+  .checkbox:checked + label:after {
+    left: 0px;
+    background: url('../img/icons/icon_cold.png') center no-repeat, linear-gradient( rgb(16,205,233) 0%, rgb(11,126,180) 100%);
+    background-size: 25px, 100%;
+  } 
+}
+
+.slider_attr{
+  border-radius: 10px;
+  background-color: rgb(51, 51, 51);
+  font-size: 0;
+  margin: 60px -20px 10px;
+  padding: 10px 0 10px 70px;
+  .item{
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+  }
+  img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .slick-prev {
+    height: 50px;
+    width: 60px;
+    z-index: 1;
+    left: -10px;
+    background-color: rgb(246,139,31);
+    box-shadow: 0px 1px 3px 0px rgba(107, 0, 240, 0.3),inset 0px 3px 1px 0px rgba(255, 255, 255, 0.3);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: background-color .3s ease-in-out;
+    }
+    .slick-next {
+      height: 50px;
+      width: 60px;
+      z-index: 1;
+      right: -10px;
+      background-color: rgb(246,139,31);
+      box-shadow: 0px 1px 3px 0px rgba(107, 0, 240, 0.3),inset 0px 3px 1px 0px rgba(255, 255, 255, 0.3);
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+      transition: background-color .3s ease-in-out;
+    }
+    .slick-prev:before {
+      content: '';
+      display: inline-block;
+      width: 15px;
+      height: 22px;
+      background: url(../img/svg/left.svg) center no-repeat;
+      opacity: 1;
+    }
+    .slick-next:before {
+      content: '';
+      display: inline-block;
+      width: 15px;
+      height: 22px;
+      background: url(../img/svg/right.svg) center no-repeat;
+      opacity: 1;
+    }
+    .slick-next:after, 
+    .slick-prev:after {
+      position: absolute;
+      border-top: 5px solid #945817;
+      border-bottom: 5px solid transparent;
+      bottom: -10px;
+      display: inline-block;
+      content: '';
+    }
+    .slick-prev:after {
+      content: '';
+      border-right: 5px solid #945817;
+      border-left: 5px solid transparent;
+      left: 0;
+    }
+    .slick-next:after {
+      border-right: 5px solid transparent;
+      border-left: 5px solid #945817;
+      right: 0;
+    }
+
+
 }

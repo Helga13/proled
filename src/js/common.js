@@ -2,6 +2,6 @@
 //= ../../bower_components/jquery/dist/jquery.min.js
 //= lib/slick.min.js
 //= lib/maskedinput.js
-//= lib/xzoom.js
+//= lib/jquery.elevatezoom.js
 
 //= app.js
