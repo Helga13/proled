@@ -3,7 +3,8 @@ $(document).ready(function () {
   $('.slogan').slick({
     dots: true,
     arrows: false,
-//    infinite: true,
+    infinite: true,
+    autoplay: true,
     speed: 500,
     fade: true,
     cssEase: 'linear'
@@ -37,7 +38,6 @@ $(document).ready(function () {
        }
   });
   
- 
+//  js-toggle-menu
   
-  
-})
+});
