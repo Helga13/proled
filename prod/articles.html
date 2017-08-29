@@ -262,7 +262,7 @@
            </ul>
           </div>
           <div class="btn_block">
-            <a href="#" class="btn">связаться с нами</a>
+            <a href="#" class="btn js-popup" data-id="feedbackForm">связаться с нами</a>
           </div>
         </div>
       </div>
@@ -278,6 +278,53 @@
         </div>
       </div>
     </footer>
+    <!--popup-->
+    <div class="overlay popup menu_popup" id="">
+      <div class="popup_content">
+    	<a href="#" class="popup_close"><img src="img/icons/icon_close.png" alt=""></a>
+    	<div class="logo_popup">
+          <a href="/">
+    	    <svg xmlns="http://www.w3.org/2000/svg" class="img_logo">
+          	   <use xlink:href="#s-logo"></use>
+        	  </svg>
+    	  </a>
+    	</div>
+    		<ul class="menu">
+    		  <li><a class="link" href="#">Каталог</a></li>
+    		  <li><a class="link" href="#">Партнерам</a></li>
+    		  <li><a class="link" href="#">Контакты</a></li>
+    		  <li><a class="link" href="#">О нас</a></li>
+    		  <li><a class="link" href="#">Полезные статьи</a></li>
+    		</ul>
+    	</div>
+    </div>
+    
+    <div class="overlay popup center" id="feedbackForm">
+      <div class="popup_content">
+    <!--	<a href="#" class="popup_close"><img src="img/icons/icon_close.png" alt=""></a>-->
+    	<form action="" method="post">
+    			<div class="text_block">
+    				<div class="subtitle">Форма обратной связи</div>
+    				<p>Укажите свои контактные данные, и наш консультант все вам подробно объяснит.</p>
+    			</div>
+    			<div class="field">
+    				<label for="simple_name" class="simple_text">Ваше имя</label>
+    				<input name="NAME" id="simple_name" type="text"> 
+    			</div>
+    			<div class="field">
+    				<label for="simple_email" class="simple_text">Почта</label>
+    				<input name="MAIL" id="simple_email" type="text" placeholder="yourmail@mail.by"> 
+    			</div>
+    			<div class="field">
+    				<label for="simple_text" class="simple_text">Почта</label>
+    				<textarea name="TEXT" id="simple_text" placeholder="Текст вопроса..."></textarea>
+    			</div>
+    			<div class="btn_block">
+                  <button value="Задать вопрос" type="submit" class="btn">задать вопрос</button>
+                </div>
+    		</form>
+    	</div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
     <script src="js/common.js"></script>
   </body>

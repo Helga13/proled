@@ -33,16 +33,27 @@ $city-total-height: 700px
 $city-image: 'sprite.png'
 $city: 3338px 563px -3338px -563px 14px 10px 8000px 700px 'sprite.png' 'city'
 $icon_address-name: 'icon_address'
-$icon_address-x: 375px
+$icon_address-x: 438px
 $icon_address-y: 596px
-$icon_address-offset-x: -375px
+$icon_address-offset-x: -438px
 $icon_address-offset-y: -596px
 $icon_address-width: 15px
 $icon_address-height: 22px
 $icon_address-total-width: 8000px
 $icon_address-total-height: 700px
 $icon_address-image: 'sprite.png'
-$icon_address: 375px 596px -375px -596px 15px 22px 8000px 700px 'sprite.png' 'icon_address'
+$icon_address: 438px 596px -438px -596px 15px 22px 8000px 700px 'sprite.png' 'icon_address'
+$icon_close-name: 'icon_close'
+$icon_close-x: 206px
+$icon_close-y: 596px
+$icon_close-offset-x: -206px
+$icon_close-offset-y: -596px
+$icon_close-width: 63px
+$icon_close-height: 63px
+$icon_close-total-width: 8000px
+$icon_close-total-height: 700px
+$icon_close-image: 'sprite.png'
+$icon_close: 206px 596px -206px -596px 63px 63px 8000px 700px 'sprite.png' 'icon_close'
 $icon_cold-name: 'icon_cold'
 $icon_cold-x: 104px
 $icon_cold-y: 596px
@@ -55,27 +66,27 @@ $icon_cold-total-height: 700px
 $icon_cold-image: 'sprite.png'
 $icon_cold: 104px 596px -104px -596px 102px 102px 8000px 700px 'sprite.png' 'icon_cold'
 $icon_lamp-active-name: 'icon_lamp-active'
-$icon_lamp-active-x: 269px
+$icon_lamp-active-x: 385px
 $icon_lamp-active-y: 596px
-$icon_lamp-active-offset-x: -269px
+$icon_lamp-active-offset-x: -385px
 $icon_lamp-active-offset-y: -596px
 $icon_lamp-active-width: 53px
 $icon_lamp-active-height: 60px
 $icon_lamp-active-total-width: 8000px
 $icon_lamp-active-total-height: 700px
 $icon_lamp-active-image: 'sprite.png'
-$icon_lamp-active: 269px 596px -269px -596px 53px 60px 8000px 700px 'sprite.png' 'icon_lamp-active'
+$icon_lamp-active: 385px 596px -385px -596px 53px 60px 8000px 700px 'sprite.png' 'icon_lamp-active'
 $icon_lamp-name: 'icon_lamp'
-$icon_lamp-x: 322px
+$icon_lamp-x: 332px
 $icon_lamp-y: 596px
-$icon_lamp-offset-x: -322px
+$icon_lamp-offset-x: -332px
 $icon_lamp-offset-y: -596px
 $icon_lamp-width: 53px
 $icon_lamp-height: 60px
 $icon_lamp-total-width: 8000px
 $icon_lamp-total-height: 700px
 $icon_lamp-image: 'sprite.png'
-$icon_lamp: 322px 596px -322px -596px 53px 60px 8000px 700px 'sprite.png' 'icon_lamp'
+$icon_lamp: 332px 596px -332px -596px 53px 60px 8000px 700px 'sprite.png' 'icon_lamp'
 $icon_mail-name: 'icon_mail'
 $icon_mail-x: 3262px
 $icon_mail-y: 563px
@@ -88,16 +99,16 @@ $icon_mail-total-height: 700px
 $icon_mail-image: 'sprite.png'
 $icon_mail: 3262px 563px -3262px -563px 22px 17px 8000px 700px 'sprite.png' 'icon_mail'
 $icon_phone-name: 'icon_phone'
-$icon_phone-x: 206px
+$icon_phone-x: 269px
 $icon_phone-y: 596px
-$icon_phone-offset-x: -206px
+$icon_phone-offset-x: -269px
 $icon_phone-offset-y: -596px
 $icon_phone-width: 63px
 $icon_phone-height: 63px
 $icon_phone-total-width: 8000px
 $icon_phone-total-height: 700px
 $icon_phone-image: 'sprite.png'
-$icon_phone: 206px 596px -206px -596px 63px 63px 8000px 700px 'sprite.png' 'icon_phone'
+$icon_phone: 269px 596px -269px -596px 63px 63px 8000px 700px 'sprite.png' 'icon_phone'
 $icon_skype-name: 'icon_skype'
 $icon_skype-x: 3284px
 $icon_skype-y: 563px
@@ -244,7 +255,7 @@ $wave_lamp_white: 2290px 563px -2290px -563px 370px 22px 8000px 700px 'sprite.pn
 $spritesheet-width: 8000px
 $spritesheet-height: 700px
 $spritesheet-image: 'sprite.png'
-$spritesheet-sprites: $address $city $icon_address $icon_cold $icon_lamp-active $icon_lamp $icon_mail $icon_phone $icon_skype $icon_velcom $icon_warm $mail $mts $skype $velcom $wave-01 $wave-02 $wave_lamp-d $wave_lamp-grad $wave_lamp $wave_lamp_white
+$spritesheet-sprites: $address $city $icon_address $icon_close $icon_cold $icon_lamp-active $icon_lamp $icon_mail $icon_phone $icon_skype $icon_velcom $icon_warm $mail $mts $skype $velcom $wave-01 $wave-02 $wave_lamp-d $wave_lamp-grad $wave_lamp $wave_lamp_white
 $spritesheet: 8000px 700px 'sprite.png' $spritesheet-sprites
 
 /*
