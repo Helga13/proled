@@ -10,6 +10,13 @@ $(document).ready(function () {
     cssEase: 'linear'
   });
   
+  $('.lamp_slider_top').coverscroll({
+    items:'.item',
+    distribution: 1.5,
+    minfactor: 35
+
+  });
+  
   $('.lamp_slider, .slider_attr').slick({
     infinite: true,
     speed: 500,
@@ -61,8 +68,8 @@ $(document).ready(function () {
         e.preventDefault();
         var DataId = $(this).attr('data-id');
         if (typeof DataId == "string") {
-//        	$('#'+DataId).fadeIn(100);
         	$('#'+DataId).fadeIn(100);
+//        	$('#'+DataId).css({'display': 'block'});
 //        	$('body').css('overflow', 'hidden');  
         }
     });
@@ -70,6 +77,7 @@ $(document).ready(function () {
         e = event || window.event
         if (e.target == this) {
             $(this).fadeOut(100);
+//            $(this).css({'display': 'none'});
 //            $('body').css('overflow', 'auto'); 
         }
     });

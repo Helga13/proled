@@ -3,6 +3,6 @@
 //= lib/slick.min.js
 //= lib/maskedinput.js
 //= lib/jquery.elevatezoom.js
-//= lib/jquery.featureCarousel.min.js
+//= lib/jquery.coverscroll.min.js
 
 //= app.js

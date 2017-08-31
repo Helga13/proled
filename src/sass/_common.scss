@@ -77,7 +77,6 @@ textarea{
   border-radius: 30px;
   padding: 6px 26px;
   border: 0px solid transparent;
-  color: #0a0138;
   outline: none;
   transition: box-shadow .3s ease-in-out;
   &:hover,
@@ -255,27 +254,18 @@ header{
   display: inline-block;
   vertical-align: middle;
   border-radius: 50%;
-  background: linear-gradient( rgb(252,191,0) 0%, rgb(246,139,31) 100%), #fbb307;
-  box-shadow: 0px 1px 3px 0px rgba(107, 0, 240, 0.3),inset 0px 3px 1px 0px rgba(255, 255, 255, 0.3);
   width: 30px;
   height: 30px;
   text-align: center;
   font-size: 0;
-  padding: 8px 4px;
+  padding: 8px;
   margin-right: 18px;
-  transition: background .3s ease-in-out, box-shadow .3s ease-in-out;
   span{
-    display: inline-block;
+    display: block;
     height: 1px;
     width: 15px;
     background-color: #4c322f;
-    margin: 2px 0;
-  }
-  &:hover,
-  &:active,
-  &:focus{
-    background: #fbb307;
-    box-shadow: 0px 1px 10px 0px rgba(255, 238, 50, 0.7),inset 0px 3px 1px 0px rgba(255, 255, 255, 0.3);
+    margin: 3px 0;
   }
 }
 
@@ -283,20 +273,19 @@ header{
   display: inline-block;
   vertical-align: middle;
   border-radius: 50%;
-  background: linear-gradient( rgb(252,191,0) 0%, rgb(246,139,31) 100%), #fbb307;
-  box-shadow: 0px 1px 3px 0px rgba(107, 0, 240, 0.3),inset 0px 3px 1px 0px rgba(255, 255, 255, 0.3);
   width: 30px;
   height: 30px;
   padding: 7px;
-  transition: background .3s ease-in-out, box-shadow .3s ease-in-out;
-  &:hover,
-  &:active,
-  &:focus{
-    background: #fbb307;
-    box-shadow: 0px 1px 10px 0px rgba(255, 238, 50, 0.7),inset 0px 3px 1px 0px rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  &:after{
+    border-radius: 50%;
+    left: 0;
   }
   img{
     width: 100%;
+    display: block;
   }
 }
 
@@ -518,17 +507,19 @@ header{
     text-align: left;
     padding: 44px 0 26px;
     li{
-      width: 90px;
+      width: 100px;
       height: 121px;
       vertical-align: middle;
       position: relative;
       a{
         line-height: normal;
-        padding: 19px 18px;
+        padding: 19px 5px;
+        height: 100%;
       }
       span{
         font-size: 14px;
         line-height: 17px;
+        display: block;
       }
       img{
         margin: 0 auto;
@@ -536,15 +527,15 @@ header{
       img.active{
         position: absolute;
         top: 19px;
-        left: 18px;
+        left: 23px;
         opacity: 0;
-        
       }
       &.active{
         a{
           top: -3px;
           padding-top: 21px;
-          padding-ottom: 21px;
+          padding-bottom: 24px;
+          height: 124px;
           .active{
             opacity: 1;
           }
@@ -616,7 +607,7 @@ header{
   font-family: 'rubikRegular', $font-stack-helvetica;
   background-image: linear-gradient( 130deg, rgb(252,191,0) 0%, rgb(246,139,31) 100%);
   position: relative;
-  padding: 100px 0;
+  padding: 100px 0 172px;
   font-size: 0;
   color: #fff;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
@@ -646,6 +637,7 @@ header{
       color: #fff;
     }
     .slick-dots{
+      bottom: -34px;
       //      font-size: 0;
       li{
         //        width: 25%;
@@ -683,6 +675,16 @@ header{
       li button:before{
         display: none;
       }
+    }
+  }
+  .lamp_slider_top{
+    height: 160px;
+    margin-bottom: 50px;
+    .item{
+      padding: 0 5px;
+    }
+    img{
+      height: 100%;
     }
   }
 }
@@ -1666,16 +1668,69 @@ header{
   display: none;
   width: auto;
   right: 0;
+  bottom: 0;
   opacity: 1;
   transition: none;
-  overflow: hidden;
   text-align: center;
   .popup_content{
-    padding: 30px;
+    border-radius: 10px;
+    padding: 86px 30px 90px;
     margin: 0 auto;
     transition: none;
     position: relative;
     display: inline-block;
-    top: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    max-width: 860px;
   }
+  p{
+    padding: 40px 0 10px;
+  }
+  .field{
+    text-align: left;
+    max-width: 560px;
+    margin: 40px auto;
+    line-height: 0;
+    input,
+    textarea{
+      width: 410px;
+      border: 1px solid rgb(204, 204, 204);
+      box-shadow: 0px 1px 10px 0px rgba(240, 135, 0, 0), inset 0px 2px 1px 0px rgba(10, 1, 56, 0.3);
+      transition: border-color .3s ease-in-out, box-shadow .3s ease-in-out;
+      &:hover{
+        border-color: rgb(240, 135, 0);
+        box-shadow: 0px 1px 10px 0px rgba(240, 135, 0, 0.7),inset 0px 3px 1px 0px rgba(240, 135, 0, 0.3);
+      }
+    }
+    input{
+      height: 60px;
+    }
+    textarea{
+      resize: vertical;
+    }
+    label{
+      display: inline-block;
+      width: calc(100% - 415px);
+      padding-right: 20px;
+      vertical-align: top;
+      line-height: 60px;
+    }
+  }
+  .btn_block:after, 
+  .btn_block:before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: calc(50% - 137px);
+    left: 10px;
+    bottom: 30px;
+    background-image: linear-gradient(90deg,#f08700 0,rgba(240,135,0,0) 100%);
+  }
+  .btn_block:before {
+    background-image: linear-gradient(-90deg,#f08700 0,rgba(240,135,0,0) 100%);
+    left: auto;
+    right: 10px;
+}
+
 }
