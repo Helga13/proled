@@ -60,7 +60,7 @@
     		  <span></span>
     		  <span></span>
     		</a>
-    		<a class="link" href="#">Все меню</a>
+    		<a class="link all_menu" href="#">Все меню</a>
     		<a class="link" href="#">Каталог товаров</a>
     	</div>
     	<div class="right_col">
@@ -113,10 +113,24 @@
             <div class="subtitle">Подберите подходящий вариант</div>
             <div class="text">Температура света</div>
             <div class="tumbler">
+              <div class="radio cold">
+                <input id="cold" type="radio" name="option[232]" value="44">
+                <label for="cold"></label>
+                <span>Холодный свет (4000К)</span>   
+              </div>
+              <div class="radio warm">
+                <input id="warm" type="radio" name="option[232]" value="43" checked>
+                <label for="warm"></label>
+                <span>Теплый свет (3000К)</span>
+              </div>
+            </div>
+<!--
+            <div class="tumbler1">
               <input type="checkbox" class="checkbox" id="checkbox" />
               <label for="checkbox">Теплый свет (3000К)</label>
               <span>Холодный свет (4000К)</span>
             </div>
+-->
             <div class="text">Мощность лампы</div>
             <ul class="pagination power">
               <li><a href="#">5W <span class="hover_tooltip">Аналог лампы накаливания: 50W</span></a></li>
@@ -181,7 +195,7 @@
          <div class="subtitle">Пора перейти от слов к цифрам!</div>
          <p>Вы можете запросить каталог с ценами у наших специалистов по продажам</p>
          <div class="btn_block">
-          <a href="#" class="btn dark">запросить прайс</a>
+          <a href="#" class="btn dark js-popup get_priceBtn" data-id="feedbackForm">запросить прайс</a>
          </div>
        </div>
        <div class="wave">
@@ -273,22 +287,22 @@
     <div class="overlay popup center" id="feedbackForm">
       <div class="popup_content">
     <!--	<a href="#" class="popup_close"><img src="img/icons/icon_close.png" alt=""></a>-->
-    	<form action="" method="post">
+    	<form action="" method="post" class="js-validate">
     			<div class="text_block">
     				<div class="subtitle">Форма обратной связи</div>
     				<p>Укажите свои контактные данные, и наш консультант все вам подробно объяснит.</p>
     			</div>
     			<div class="field">
     				<label for="simple_name" class="simple_text">Ваше имя</label>
-    				<input name="NAME" id="simple_name" type="text"> 
+    				<input name="name" id="simple_name" type="text" autocomplete="off"> 
     			</div>
     			<div class="field">
     				<label for="simple_email" class="simple_text">Почта</label>
-    				<input name="MAIL" id="simple_email" type="text" placeholder="yourmail@mail.by"> 
+    				<input name="email" id="simple_email" type="text" placeholder="yourmail@mail.by" data-validation="email" data-validation-error-msg="Неверный формат. Пример: info@proled.by" autocomplete="off"> 
     			</div>
     			<div class="field">
     				<label for="simple_text" class="simple_text">Вопрос</label>
-    				<textarea name="TEXT" id="simple_text" placeholder="Текст вопроса..."></textarea>
+    				<textarea name="text" id="simple_text" placeholder="Текст вопроса..."></textarea>
     			</div>
     			<div class="btn_block">
                   <button value="Задать вопрос" type="submit" class="btn">задать вопрос</button>

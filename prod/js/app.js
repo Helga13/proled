@@ -12,7 +12,7 @@ $(document).ready(function () {
   
   $('.lamp_slider_top').coverscroll({
     items:'.item',
-    distribution: 1.5,
+    distribution: 1.4,
     minfactor: 35
 
   });
@@ -37,13 +37,13 @@ $(document).ready(function () {
   }); 
   
   
-  $('.tumbler label').on('click', function(){
-    if($('.tumbler label').parent('.tumbler').find('input').prop('checked')){  
-      $('.tumbler label').text('Теплый свет (3000К)');
-       }else{
-       $('.tumbler label').text('Холодный свет (4000К)');
-       }
-  });
+//  $('.tumbler label').on('click', function(){
+//    if($('.tumbler label').parent('.tumbler').find('input').prop('checked')){  
+//      $('.tumbler label').text('Теплый свет (3000К)');
+//       }else{
+//       $('.tumbler label').text('Холодный свет (4000К)');
+//       }
+//  });
   
 //  js-toggle-menu
   
@@ -90,6 +90,27 @@ $(document).ready(function () {
 		e.stopPropagation();
 	}); 
   
+  // replace text in popup
+  
+  $('.get_priceBtn').on('click', function (e) {
+    $('#feedbackForm .btn').text('запросить прайс');
+  });
+  
+  // validate
+  
+  (function () {
+    var form_validate = $('.js-validate');
+    if (form_validate.length) {
+      form_validate.each(function () {
+        var form_this = $(this);
+        $.validate({
+          form: form_this,
+          borderColorOnError: true,
+          scrollToTopOnError: false,
+        });
+      });
+    };
+  })();
   
   
 });

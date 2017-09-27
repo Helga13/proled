@@ -60,7 +60,7 @@
     		  <span></span>
     		  <span></span>
     		</a>
-    		<a class="link" href="#">Все меню</a>
+    		<a class="link all_menu" href="#">Все меню</a>
     		<a class="link" href="#">Каталог товаров</a>
     	</div>
     	<div class="right_col">
@@ -111,7 +111,7 @@
               <div class="item"><img class="" src="img/lamp/lamp2.png" alt=""></div>		
               <div class="item"><img class="" src="img/lamp/lamp1.png" alt=""></div>				
             </div>
-            <a href="#" class="btn dark">узнать цены</a>
+            <a href="#" class="btn dark js-popup get_priceBtn" data-id="feedbackForm">узнать цены</a>
           </div>
 
         </div>
@@ -127,7 +127,7 @@
               <div class="img_block">
                 <img src="img/advantages/advantage-01.svg" alt="">
               </div>
-              <div class="caption"><p>250 городов</p></div>
+              <div class="caption"><p><span>250 городов</span></p></div>
               <div class="text">Доставка по всей Беларуси</div>
               <p>Мы доставляем нашу продукцию в любую точку страны</p>
             </div>
@@ -135,7 +135,7 @@
               <div class="img_block">
                 <img src="img/advantages/advantage-02.svg" alt="">
               </div>
-              <div class="caption"><p>18 000 товаров</p></div>
+              <div class="caption"><p><span>18 000 товаров</span></p></div>
               <div class="text">Всегда на складе</div>
               <p>Все товары постоянно имеются в наличии у нас на складе</p>
             </div>
@@ -143,7 +143,7 @@
               <div class="img_block">
                 <img src="img/advantages/advantage-03.svg" alt="">
               </div>
-              <div class="caption"><p>87 кв. м</p></div>
+              <div class="caption"><p><span>87 кв. м</span></p></div>
               <div class="text">Склад в центре Минска</div>
               <p>Удобное расположене по адресу ул. Аэродромная, 125</p>
             </div>
@@ -151,7 +151,7 @@
               <div class="img_block">
                 <img src="img/advantages/advantage-04.svg" alt="">
               </div>
-              <div class="caption"><p>10 лет опыта</p></div>
+              <div class="caption"><p><span>10 лет опыта</span></p></div>
               <div class="text">Индивидуальный подход</div>
               <p>Всегда готовы помочь вам в выборе товара</p>
             </div>
@@ -292,7 +292,7 @@
          <div class="subtitle">Пора перейти от слов к цифрам!</div>
          <p>Вы можете запросить каталог с ценами у наших специалистов по продажам</p>
          <div class="btn_block">
-          <a href="#" class="btn dark">запросить прайс</a>
+          <a href="#" class="btn dark js-popup get_priceBtn" data-id="feedbackForm">запросить прайс</a>
          </div>
        </div>
         <div class="wave">
@@ -334,17 +334,17 @@
        <div class="wrap">
          <div class="subtitle">Узнайте подробности у нашего специалиста</div>
          <p>Укажите свои контактные данные, и наш консультант все вам подробно объяснит.</p>
-         <form action="/" method="post" class="main_form">
+         <form action="/" method="post" class="main_form js-validate">
           <div class="field">
             <label for="index_name">Ваше имя</label>
             <input type="text" id="index_name">
           </div>
           <div class="field">
             <label for="index_phone">Телефон</label>
-            <input type="text" id="index_phone" placeholder="+375(29)___-__-__">
+            <input type="text" id="index_phone" placeholder="+375(29)___-__-__" data-validation="required" data-validation-error-msg="Введите номер телефона">
           </div>
            <div class="btn_block">
-            <a href="#" class="btn">заказать звонок</a>
+            <button type="submit" class="btn">заказать звонок</button>
           </div>
          </form>
          
@@ -460,22 +460,22 @@
     <div class="overlay popup center" id="feedbackForm">
       <div class="popup_content">
     <!--	<a href="#" class="popup_close"><img src="img/icons/icon_close.png" alt=""></a>-->
-    	<form action="" method="post">
+    	<form action="" method="post" class="js-validate">
     			<div class="text_block">
     				<div class="subtitle">Форма обратной связи</div>
     				<p>Укажите свои контактные данные, и наш консультант все вам подробно объяснит.</p>
     			</div>
     			<div class="field">
     				<label for="simple_name" class="simple_text">Ваше имя</label>
-    				<input name="NAME" id="simple_name" type="text"> 
+    				<input name="name" id="simple_name" type="text" autocomplete="off"> 
     			</div>
     			<div class="field">
     				<label for="simple_email" class="simple_text">Почта</label>
-    				<input name="MAIL" id="simple_email" type="text" placeholder="yourmail@mail.by"> 
+    				<input name="email" id="simple_email" type="text" placeholder="yourmail@mail.by" data-validation="email" data-validation-error-msg="Неверный формат. Пример: info@proled.by" autocomplete="off"> 
     			</div>
     			<div class="field">
     				<label for="simple_text" class="simple_text">Вопрос</label>
-    				<textarea name="TEXT" id="simple_text" placeholder="Текст вопроса..."></textarea>
+    				<textarea name="text" id="simple_text" placeholder="Текст вопроса..."></textarea>
     			</div>
     			<div class="btn_block">
                   <button value="Задать вопрос" type="submit" class="btn">задать вопрос</button>

@@ -705,22 +705,24 @@ header{
   padding: 0 20px 46px 20px;
   .caption{
     background: linear-gradient( 90deg, rgba(240,135,0,.2) 0%, rgba(255,255,255,.2) 100%);
-    width: 210px;
+    max-width: 210px;
+    width: calc(100% - 50px);
     height: 100px;
     margin-left: 50px;
+    position: relative;
     p{
-      display: inline-block;
+      display: table;
       vertical-align: middle;
       height: 100%;
-      padding-left: 10px;
+      width: 100%;
+      padding-left: 60px;
       font-family: 'rubikMedium', $font-stack-helvetica;
       letter-spacing: 0.05em;
       color: #222;
-      &:after{
-        content: '';
-        display: inline-block;
+      position: absolute;
+      span{
+        display: table-cell;
         vertical-align: middle;
-        height: 100%;
       }
     } 
   }
@@ -738,6 +740,8 @@ header{
     line-height: 68px;
     text-align: center;
     font-family: 'rubikMedium', $font-stack-helvetica;
+    position: relative;
+    z-index: 1;
     img{
       width: 100%;
     }
@@ -1050,18 +1054,43 @@ header{
     width: 50%;
     display: inline-block;
     vertical-align: top;
+    position: relative;
+    &:after{
+      content: '';
+      position: absolute;
+      width: calc(100% - 372px);
+      height: 60px;
+      bottom: 39px;
+      left: 20px;
+      background-image: linear-gradient(90deg,rgba(255,255,255,0) 0,rgba(255,255,255,.2) 100%);
+    }
     input{
-      width: 412px;
+      max-width: 412px;
+      width: 100%;
       margin-left: -40px;
     }
     label{
       text-align: left;
       display: inline-block;
       width: calc(100% - 372px);
+      min-width: 155px;
       padding: 6px 40px 6px 0;
-      background-image: linear-gradient( 90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 100%);
-
     }
+  }
+}
+
+.field.has-error{
+  .error{
+    border-color: #f03e00;
+    box-shadow: 0px 1px 10px 0px rgba(240, 62, 0, 0.7),inset 0px 3px 1px 0px rgba(240, 62, 0, 0.3);
+    background-color: #fee9e2;
+  }
+  .help-block{
+    display: inline-block;
+    color: #f03e00;
+    font-size: 12px;
+    line-height: 30px;
+    margin-left: -60px;
   }
 }
 
@@ -1388,6 +1417,11 @@ header{
   z-index: 2;
 }
 
+.zoomLens{
+  border: 1px solid #7e7e7e!important;
+  border-radius: 10px!important;
+}
+
 #gal1{
   float: left;
   width: 82px;
@@ -1430,7 +1464,7 @@ header{
 
 /* custom tumbler */
 
-.tumbler{
+.tumbler1{
   position: relative;
   padding-bottom: 10px;
   .checkbox {
@@ -1485,6 +1519,71 @@ header{
     background: url('../img/icons/icon_cold.png') center no-repeat, linear-gradient( rgb(16,205,233) 0%, rgb(11,126,180) 100%);
     background-size: 25px, 100%;
   } 
+}
+
+.tumbler{
+  position: relative;
+  display: inline-block;
+  width: 102px;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  box-shadow: inset 0 3px 1px 0 rgba(10,1,56,.3);
+  .radio{
+    display: inline-block;
+    width: 50px;
+    label{
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      transition: opacity .2s;
+      opacity: 0;
+      top: -1px;
+    }
+    input{
+      position: absolute;
+      opacity: 0;
+      visibility: hidden;
+    }
+    span{
+      position: absolute;
+      color: #333;
+      font-size: 16px;
+      line-height: 50px;
+      font-family: 'rubikRegular', $font-stack-helvetica;
+      white-space: nowrap;
+      opacity: 0;
+    }
+    &.warm > input + label{
+      background: url('../img/icons/icon_warm.png') center no-repeat, linear-gradient( 0deg, rgb(246,139,31) 0%, rgb(252,191,0) 100%);
+      background-size: 25px, 100%;
+      & + span{
+        padding-left: 20px;
+      }
+    }
+    &.cold > input + label{
+      background: url('../img/icons/icon_cold.png') center no-repeat, linear-gradient( rgb(16,205,233) 0%, rgb(11,126,180) 100%);
+      background-size: 25px, 100%;
+      & + span{
+        padding-left: 70px;
+      }
+    }
+    &.warm > input:checked + label{
+      opacity: 1;
+      & + span{
+        opacity: 1;
+      }
+    }
+    &.cold > input:checked + label{
+      opacity: 1;
+      & + span{
+        opacity: 1;
+      }
+    }
+  }
 }
 
 .slider_attr{
@@ -1715,6 +1814,11 @@ header{
       padding-right: 20px;
       vertical-align: top;
       line-height: 60px;
+    }
+    &.has-error{
+      .help-block{
+        padding-left: calc(100% - 388px);
+      }
     }
   }
   .btn_block:after, 
