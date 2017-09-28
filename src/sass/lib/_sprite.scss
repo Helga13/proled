@@ -11,252 +11,263 @@
   $spritesheet: width height image $spritesheet-sprites
   */
 $address-name: 'address'
-$address-x: 3327px
-$address-y: 563px
-$address-offset-x: -3327px
-$address-offset-y: -563px
+$address-x: 3037px
+$address-y: 1126px
+$address-offset-x: -3037px
+$address-offset-y: -1126px
 $address-width: 11px
 $address-height: 14px
 $address-total-width: 8000px
-$address-total-height: 700px
+$address-total-height: 1263px
 $address-image: 'sprite.png'
-$address: 3327px 563px -3327px -563px 11px 14px 8000px 700px 'sprite.png' 'address'
+$address: 3037px 1126px -3037px -1126px 11px 14px 8000px 1263px 'sprite.png' 'address'
 $city-name: 'city'
-$city-x: 3338px
-$city-y: 563px
-$city-offset-x: -3338px
-$city-offset-y: -563px
+$city-x: 3048px
+$city-y: 1126px
+$city-offset-x: -3048px
+$city-offset-y: -1126px
 $city-width: 14px
 $city-height: 10px
 $city-total-width: 8000px
-$city-total-height: 700px
+$city-total-height: 1263px
 $city-image: 'sprite.png'
-$city: 3338px 563px -3338px -563px 14px 10px 8000px 700px 'sprite.png' 'city'
+$city: 3048px 1126px -3048px -1126px 14px 10px 8000px 1263px 'sprite.png' 'city'
 $icon_address-name: 'icon_address'
-$icon_address-x: 438px
-$icon_address-y: 596px
-$icon_address-offset-x: -438px
-$icon_address-offset-y: -596px
+$icon_address-x: 496px
+$icon_address-y: 1159px
+$icon_address-offset-x: -496px
+$icon_address-offset-y: -1159px
 $icon_address-width: 15px
 $icon_address-height: 22px
 $icon_address-total-width: 8000px
-$icon_address-total-height: 700px
+$icon_address-total-height: 1263px
 $icon_address-image: 'sprite.png'
-$icon_address: 438px 596px -438px -596px 15px 22px 8000px 700px 'sprite.png' 'icon_address'
+$icon_address: 496px 1159px -496px -1159px 15px 22px 8000px 1263px 'sprite.png' 'icon_address'
 $icon_close-name: 'icon_close'
-$icon_close-x: 206px
-$icon_close-y: 596px
-$icon_close-offset-x: -206px
-$icon_close-offset-y: -596px
+$icon_close-x: 269px
+$icon_close-y: 1191px
+$icon_close-offset-x: -269px
+$icon_close-offset-y: -1191px
 $icon_close-width: 63px
 $icon_close-height: 63px
 $icon_close-total-width: 8000px
-$icon_close-total-height: 700px
+$icon_close-total-height: 1263px
 $icon_close-image: 'sprite.png'
-$icon_close: 206px 596px -206px -596px 63px 63px 8000px 700px 'sprite.png' 'icon_close'
+$icon_close: 269px 1191px -269px -1191px 63px 63px 8000px 1263px 'sprite.png' 'icon_close'
 $icon_cold-name: 'icon_cold'
 $icon_cold-x: 104px
-$icon_cold-y: 596px
+$icon_cold-y: 1159px
 $icon_cold-offset-x: -104px
-$icon_cold-offset-y: -596px
+$icon_cold-offset-y: -1159px
 $icon_cold-width: 102px
 $icon_cold-height: 102px
 $icon_cold-total-width: 8000px
-$icon_cold-total-height: 700px
+$icon_cold-total-height: 1263px
 $icon_cold-image: 'sprite.png'
-$icon_cold: 104px 596px -104px -596px 102px 102px 8000px 700px 'sprite.png' 'icon_cold'
+$icon_cold: 104px 1159px -104px -1159px 102px 102px 8000px 1263px 'sprite.png' 'icon_cold'
 $icon_lamp-active-name: 'icon_lamp-active'
 $icon_lamp-active-x: 385px
-$icon_lamp-active-y: 596px
+$icon_lamp-active-y: 1191px
 $icon_lamp-active-offset-x: -385px
-$icon_lamp-active-offset-y: -596px
+$icon_lamp-active-offset-y: -1191px
 $icon_lamp-active-width: 53px
 $icon_lamp-active-height: 60px
 $icon_lamp-active-total-width: 8000px
-$icon_lamp-active-total-height: 700px
+$icon_lamp-active-total-height: 1263px
 $icon_lamp-active-image: 'sprite.png'
-$icon_lamp-active: 385px 596px -385px -596px 53px 60px 8000px 700px 'sprite.png' 'icon_lamp-active'
+$icon_lamp-active: 385px 1191px -385px -1191px 53px 60px 8000px 1263px 'sprite.png' 'icon_lamp-active'
 $icon_lamp-name: 'icon_lamp'
 $icon_lamp-x: 332px
-$icon_lamp-y: 596px
+$icon_lamp-y: 1191px
 $icon_lamp-offset-x: -332px
-$icon_lamp-offset-y: -596px
+$icon_lamp-offset-y: -1191px
 $icon_lamp-width: 53px
 $icon_lamp-height: 60px
 $icon_lamp-total-width: 8000px
-$icon_lamp-total-height: 700px
+$icon_lamp-total-height: 1263px
 $icon_lamp-image: 'sprite.png'
-$icon_lamp: 332px 596px -332px -596px 53px 60px 8000px 700px 'sprite.png' 'icon_lamp'
+$icon_lamp: 332px 1191px -332px -1191px 53px 60px 8000px 1263px 'sprite.png' 'icon_lamp'
 $icon_mail-name: 'icon_mail'
-$icon_mail-x: 3262px
-$icon_mail-y: 563px
-$icon_mail-offset-x: -3262px
-$icon_mail-offset-y: -563px
+$icon_mail-x: 2972px
+$icon_mail-y: 1126px
+$icon_mail-offset-x: -2972px
+$icon_mail-offset-y: -1126px
 $icon_mail-width: 22px
 $icon_mail-height: 17px
 $icon_mail-total-width: 8000px
-$icon_mail-total-height: 700px
+$icon_mail-total-height: 1263px
 $icon_mail-image: 'sprite.png'
-$icon_mail: 3262px 563px -3262px -563px 22px 17px 8000px 700px 'sprite.png' 'icon_mail'
+$icon_mail: 2972px 1126px -2972px -1126px 22px 17px 8000px 1263px 'sprite.png' 'icon_mail'
 $icon_phone-name: 'icon_phone'
-$icon_phone-x: 269px
-$icon_phone-y: 596px
-$icon_phone-offset-x: -269px
-$icon_phone-offset-y: -596px
+$icon_phone-x: 206px
+$icon_phone-y: 1191px
+$icon_phone-offset-x: -206px
+$icon_phone-offset-y: -1191px
 $icon_phone-width: 63px
 $icon_phone-height: 63px
 $icon_phone-total-width: 8000px
-$icon_phone-total-height: 700px
+$icon_phone-total-height: 1263px
 $icon_phone-image: 'sprite.png'
-$icon_phone: 269px 596px -269px -596px 63px 63px 8000px 700px 'sprite.png' 'icon_phone'
+$icon_phone: 206px 1191px -206px -1191px 63px 63px 8000px 1263px 'sprite.png' 'icon_phone'
 $icon_skype-name: 'icon_skype'
-$icon_skype-x: 3284px
-$icon_skype-y: 563px
-$icon_skype-offset-x: -3284px
-$icon_skype-offset-y: -563px
+$icon_skype-x: 2994px
+$icon_skype-y: 1126px
+$icon_skype-offset-x: -2994px
+$icon_skype-offset-y: -1126px
 $icon_skype-width: 15px
 $icon_skype-height: 16px
 $icon_skype-total-width: 8000px
-$icon_skype-total-height: 700px
+$icon_skype-total-height: 1263px
 $icon_skype-image: 'sprite.png'
-$icon_skype: 3284px 563px -3284px -563px 15px 16px 8000px 700px 'sprite.png' 'icon_skype'
+$icon_skype: 2994px 1126px -2994px -1126px 15px 16px 8000px 1263px 'sprite.png' 'icon_skype'
 $icon_velcom-name: 'icon_velcom'
-$icon_velcom-x: 3240px
-$icon_velcom-y: 563px
-$icon_velcom-offset-x: -3240px
-$icon_velcom-offset-y: -563px
+$icon_velcom-x: 2950px
+$icon_velcom-y: 1126px
+$icon_velcom-offset-x: -2950px
+$icon_velcom-offset-y: -1126px
 $icon_velcom-width: 22px
 $icon_velcom-height: 22px
 $icon_velcom-total-width: 8000px
-$icon_velcom-total-height: 700px
+$icon_velcom-total-height: 1263px
 $icon_velcom-image: 'sprite.png'
-$icon_velcom: 3240px 563px -3240px -563px 22px 22px 8000px 700px 'sprite.png' 'icon_velcom'
+$icon_velcom: 2950px 1126px -2950px -1126px 22px 22px 8000px 1263px 'sprite.png' 'icon_velcom'
 $icon_warm-name: 'icon_warm'
 $icon_warm-x: 0px
-$icon_warm-y: 596px
+$icon_warm-y: 1159px
 $icon_warm-offset-x: 0px
-$icon_warm-offset-y: -596px
+$icon_warm-offset-y: -1159px
 $icon_warm-width: 104px
 $icon_warm-height: 104px
 $icon_warm-total-width: 8000px
-$icon_warm-total-height: 700px
+$icon_warm-total-height: 1263px
 $icon_warm-image: 'sprite.png'
-$icon_warm: 0px 596px 0px -596px 104px 104px 8000px 700px 'sprite.png' 'icon_warm'
+$icon_warm: 0px 1159px 0px -1159px 104px 104px 8000px 1263px 'sprite.png' 'icon_warm'
 $mail-name: 'mail'
-$mail-x: 3352px
-$mail-y: 563px
-$mail-offset-x: -3352px
-$mail-offset-y: -563px
+$mail-x: 3062px
+$mail-y: 1126px
+$mail-offset-x: -3062px
+$mail-offset-y: -1126px
 $mail-width: 12px
 $mail-height: 10px
 $mail-total-width: 8000px
-$mail-total-height: 700px
+$mail-total-height: 1263px
 $mail-image: 'sprite.png'
-$mail: 3352px 563px -3352px -563px 12px 10px 8000px 700px 'sprite.png' 'mail'
+$mail: 3062px 1126px -3062px -1126px 12px 10px 8000px 1263px 'sprite.png' 'mail'
 $mts-name: 'mts'
-$mts-x: 3313px
-$mts-y: 563px
-$mts-offset-x: -3313px
-$mts-offset-y: -563px
+$mts-x: 3009px
+$mts-y: 1126px
+$mts-offset-x: -3009px
+$mts-offset-y: -1126px
 $mts-width: 14px
 $mts-height: 14px
 $mts-total-width: 8000px
-$mts-total-height: 700px
+$mts-total-height: 1263px
 $mts-image: 'sprite.png'
-$mts: 3313px 563px -3313px -563px 14px 14px 8000px 700px 'sprite.png' 'mts'
+$mts: 3009px 1126px -3009px -1126px 14px 14px 8000px 1263px 'sprite.png' 'mts'
 $skype-name: 'skype'
-$skype-x: 3364px
-$skype-y: 563px
-$skype-offset-x: -3364px
-$skype-offset-y: -563px
+$skype-x: 3074px
+$skype-y: 1126px
+$skype-offset-x: -3074px
+$skype-offset-y: -1126px
 $skype-width: 10px
 $skype-height: 10px
 $skype-total-width: 8000px
-$skype-total-height: 700px
+$skype-total-height: 1263px
 $skype-image: 'sprite.png'
-$skype: 3364px 563px -3364px -563px 10px 10px 8000px 700px 'sprite.png' 'skype'
+$skype: 3074px 1126px -3074px -1126px 10px 10px 8000px 1263px 'sprite.png' 'skype'
 $velcom-name: 'velcom'
-$velcom-x: 3299px
-$velcom-y: 563px
-$velcom-offset-x: -3299px
-$velcom-offset-y: -563px
+$velcom-x: 3023px
+$velcom-y: 1126px
+$velcom-offset-x: -3023px
+$velcom-offset-y: -1126px
 $velcom-width: 14px
 $velcom-height: 14px
 $velcom-total-width: 8000px
-$velcom-total-height: 700px
+$velcom-total-height: 1263px
 $velcom-image: 'sprite.png'
-$velcom: 3299px 563px -3299px -563px 14px 14px 8000px 700px 'sprite.png' 'velcom'
+$velcom: 3023px 1126px -3023px -1126px 14px 14px 8000px 1263px 'sprite.png' 'velcom'
 $wave-01-name: 'wave-01'
 $wave-01-x: 0px
-$wave-01-y: 0px
+$wave-01-y: 563px
 $wave-01-offset-x: 0px
-$wave-01-offset-y: 0px
+$wave-01-offset-y: -563px
 $wave-01-width: 8000px
 $wave-01-height: 563px
 $wave-01-total-width: 8000px
-$wave-01-total-height: 700px
+$wave-01-total-height: 1263px
 $wave-01-image: 'sprite.png'
-$wave-01: 0px 0px 0px 0px 8000px 563px 8000px 700px 'sprite.png' 'wave-01'
+$wave-01: 0px 563px 0px -563px 8000px 563px 8000px 1263px 'sprite.png' 'wave-01'
 $wave-02-name: 'wave-02'
 $wave-02-x: 0px
-$wave-02-y: 563px
+$wave-02-y: 0px
 $wave-02-offset-x: 0px
-$wave-02-offset-y: -563px
-$wave-02-width: 1920px
-$wave-02-height: 33px
+$wave-02-offset-y: 0px
+$wave-02-width: 8000px
+$wave-02-height: 563px
 $wave-02-total-width: 8000px
-$wave-02-total-height: 700px
+$wave-02-total-height: 1263px
 $wave-02-image: 'sprite.png'
-$wave-02: 0px 563px 0px -563px 1920px 33px 8000px 700px 'sprite.png' 'wave-02'
+$wave-02: 0px 0px 0px 0px 8000px 563px 8000px 1263px 'sprite.png' 'wave-02'
+$wave-02_old-name: 'wave-02_old'
+$wave-02_old-x: 0px
+$wave-02_old-y: 1126px
+$wave-02_old-offset-x: 0px
+$wave-02_old-offset-y: -1126px
+$wave-02_old-width: 1920px
+$wave-02_old-height: 33px
+$wave-02_old-total-width: 8000px
+$wave-02_old-total-height: 1263px
+$wave-02_old-image: 'sprite.png'
+$wave-02_old: 0px 1126px 0px -1126px 1920px 33px 8000px 1263px 'sprite.png' 'wave-02_old'
 $wave_lamp-d-name: 'wave_lamp-d'
-$wave_lamp-d-x: 2660px
-$wave_lamp-d-y: 563px
-$wave_lamp-d-offset-x: -2660px
-$wave_lamp-d-offset-y: -563px
+$wave_lamp-d-x: 206px
+$wave_lamp-d-y: 1159px
+$wave_lamp-d-offset-x: -206px
+$wave_lamp-d-offset-y: -1159px
 $wave_lamp-d-width: 290px
-$wave_lamp-d-height: 22px
+$wave_lamp-d-height: 32px
 $wave_lamp-d-total-width: 8000px
-$wave_lamp-d-total-height: 700px
+$wave_lamp-d-total-height: 1263px
 $wave_lamp-d-image: 'sprite.png'
-$wave_lamp-d: 2660px 563px -2660px -563px 290px 22px 8000px 700px 'sprite.png' 'wave_lamp-d'
+$wave_lamp-d: 206px 1159px -206px -1159px 290px 32px 8000px 1263px 'sprite.png' 'wave_lamp-d'
 $wave_lamp-grad-name: 'wave_lamp-grad'
 $wave_lamp-grad-x: 1920px
-$wave_lamp-grad-y: 563px
+$wave_lamp-grad-y: 1126px
 $wave_lamp-grad-offset-x: -1920px
-$wave_lamp-grad-offset-y: -563px
+$wave_lamp-grad-offset-y: -1126px
 $wave_lamp-grad-width: 370px
-$wave_lamp-grad-height: 22px
+$wave_lamp-grad-height: 28px
 $wave_lamp-grad-total-width: 8000px
-$wave_lamp-grad-total-height: 700px
+$wave_lamp-grad-total-height: 1263px
 $wave_lamp-grad-image: 'sprite.png'
-$wave_lamp-grad: 1920px 563px -1920px -563px 370px 22px 8000px 700px 'sprite.png' 'wave_lamp-grad'
+$wave_lamp-grad: 1920px 1126px -1920px -1126px 370px 28px 8000px 1263px 'sprite.png' 'wave_lamp-grad'
 $wave_lamp-name: 'wave_lamp'
-$wave_lamp-x: 2950px
-$wave_lamp-y: 563px
-$wave_lamp-offset-x: -2950px
-$wave_lamp-offset-y: -563px
+$wave_lamp-x: 2660px
+$wave_lamp-y: 1126px
+$wave_lamp-offset-x: -2660px
+$wave_lamp-offset-y: -1126px
 $wave_lamp-width: 290px
 $wave_lamp-height: 22px
 $wave_lamp-total-width: 8000px
-$wave_lamp-total-height: 700px
+$wave_lamp-total-height: 1263px
 $wave_lamp-image: 'sprite.png'
-$wave_lamp: 2950px 563px -2950px -563px 290px 22px 8000px 700px 'sprite.png' 'wave_lamp'
+$wave_lamp: 2660px 1126px -2660px -1126px 290px 22px 8000px 1263px 'sprite.png' 'wave_lamp'
 $wave_lamp_white-name: 'wave_lamp_white'
 $wave_lamp_white-x: 2290px
-$wave_lamp_white-y: 563px
+$wave_lamp_white-y: 1126px
 $wave_lamp_white-offset-x: -2290px
-$wave_lamp_white-offset-y: -563px
+$wave_lamp_white-offset-y: -1126px
 $wave_lamp_white-width: 370px
 $wave_lamp_white-height: 22px
 $wave_lamp_white-total-width: 8000px
-$wave_lamp_white-total-height: 700px
+$wave_lamp_white-total-height: 1263px
 $wave_lamp_white-image: 'sprite.png'
-$wave_lamp_white: 2290px 563px -2290px -563px 370px 22px 8000px 700px 'sprite.png' 'wave_lamp_white'
+$wave_lamp_white: 2290px 1126px -2290px -1126px 370px 22px 8000px 1263px 'sprite.png' 'wave_lamp_white'
 $spritesheet-width: 8000px
-$spritesheet-height: 700px
+$spritesheet-height: 1263px
 $spritesheet-image: 'sprite.png'
-$spritesheet-sprites: $address $city $icon_address $icon_close $icon_cold $icon_lamp-active $icon_lamp $icon_mail $icon_phone $icon_skype $icon_velcom $icon_warm $mail $mts $skype $velcom $wave-01 $wave-02 $wave_lamp-d $wave_lamp-grad $wave_lamp $wave_lamp_white
-$spritesheet: 8000px 700px 'sprite.png' $spritesheet-sprites
+$spritesheet-sprites: $address $city $icon_address $icon_close $icon_cold $icon_lamp-active $icon_lamp $icon_mail $icon_phone $icon_skype $icon_velcom $icon_warm $mail $mts $skype $velcom $wave-01 $wave-02 $wave-02_old $wave_lamp-d $wave_lamp-grad $wave_lamp $wave_lamp_white
+$spritesheet: 8000px 1263px 'sprite.png' $spritesheet-sprites
 
 /*
   The provided mixins are intended to be used with the array-like variables

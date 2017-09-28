@@ -70,7 +70,7 @@ $(document).ready(function () {
         if (typeof DataId == "string") {
         	$('#'+DataId).fadeIn(100);
 //        	$('#'+DataId).css({'display': 'block'});
-//        	$('body').css('overflow', 'hidden');  
+        	$('body').css('overflow', 'hidden');  
         }
     });
     $('.popup.center').click(function (e) {
@@ -78,7 +78,7 @@ $(document).ready(function () {
         if (e.target == this) {
             $(this).fadeOut(100);
 //            $(this).css({'display': 'none'});
-//            $('body').css('overflow', 'auto'); 
+            $('body').css('overflow', 'auto'); 
         }
     });
 //	$('.center .popup_close').click(function (e) {
