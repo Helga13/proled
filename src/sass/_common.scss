@@ -678,10 +678,11 @@ header{
     height: 160px;
     margin-bottom: 50px;
     .item{
-      padding: 0 5px;
+//      padding: 0 5px;
     }
     img{
       height: 100%;
+      max-width: 100%;
     }
   }
 }
@@ -1828,6 +1829,10 @@ header{
     background-image: linear-gradient(-90deg,#f08700 0,rgba(240,135,0,0) 100%);
     left: auto;
     right: 10px;
+  }
 }
 
+.swiper-container{
+//  width: 70%;
+//  margin: 0 auto;
 }

@@ -68,6 +68,9 @@
   .slider_attr{
     margin-top: 10px;
   }
+  .pagination.power .hover_tooltip{
+    display: none;
+  }
 }
 
 @media only screen and (max-width : 767px) {
